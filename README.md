@@ -1,9 +1,21 @@
 # Power Apps - Virtual Machine Requester
-![Header]
 
-This is a demo to showcase a number of Microsoft cloud technologies working together to provide a self-service mobile app which automates the provisioning of Azure resources. It utilizes Power Apps, Flow (or Azure Logic Apps), Azure DevOps and Azure. The scenario is based on an Azure Developer environment where individuals can request a Virtual Machine to be provisioned into their shared Dev environment.
+<br/>
+<p align="center">
+    <img src="./documentation/header.png">
+</p>
+<br/>
 
-![Screenshot]
+This is a MVP demo to showcase a number of Microsoft cloud technologies working together to provide a self-service mobile app which automates teh provisioning of Azure resources. It utilizes Power Apps, Flow (or Azure Logic Apps), Azure DevOps and Azure. The scenario is based on an Azure Developer environment where individuals can request a Virtual Machine to be provisioned into their shared Dev environment.
+
+<br/>
+<p align="center">
+    <img src="./documentation/screenshot.png">
+</p>
+<br/>
+
+---
+<br/>
 
 ### ARM Teamplate
 
@@ -17,6 +29,10 @@ This demo assumes that there is an existing virtual network and subnet that the 
 
 The ARM Template parameters file does not need to be changed as these values will be dynamically overriding when the DevOps Release is run.
 
+<br/>
+
+---
+<br/>
 
 ### Azure DevOps
 
@@ -49,6 +65,11 @@ Now set the DevOps Release variables to match ensuring the ‘Settable at releas
 
 New that you have a DevOps Pipeline setup you’ll need to generate a PAT (Personal Access Token) to enable your Microsoft Flow to authenticate with the Pipeline when making the REST API call. [Follow these steps][PAT] to create a PAT for Flow to use – you should only require ‘Release – Read, write & execute’ permissions to trigger the Release.
 
+<br/>
+
+---
+<br/>
+
 ## Power Apps
 
 From the Power Apps portal select ‘Import package’ then browse to the export ZIP file. This will import the ‘Azure VM Requester’ Power App as a new canvas app.
@@ -75,7 +96,12 @@ A new record is created using these fields each time the form is summited using 
 
 ![Record]
 
-## Microsoft Flow (or Azure Logic App)
+<br/>
+
+---
+<br/>
+
+## Microsoft Power Automate (or Azure Logic App)
 
 When you imported the pre-created ‘Azure VM Requester’ Power App a new Flow should have also been created however some settings will need to be updated to use your own Power Apps environment and DevOps organization. These steps show you how to create a new Flow using the ‘Automated - from blank’ option if you need to otherwise just update with your own settings.
 
@@ -130,8 +156,6 @@ To test the [DevOps Pipeline Release REST API][DevOpsRestApi] you can use a free
 <!-- References -->
 
 <!-- Local -->
-[Header]: documentation/header.png
-[Screenshot]: documentation/screenshot.png
 [AzureDeploy]: documentation/azuredeploy.png
 [Repo]: documentation/repo.png
 [Release]: documentation/release.png
