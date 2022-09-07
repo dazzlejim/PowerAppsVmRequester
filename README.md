@@ -15,9 +15,8 @@ This is a MVP demo to showcase a number of Microsoft cloud technologies working 
 <br/>
 
 ---
-<br/>
 
-### ARM Teamplate
+## ARM Teamplate
 
 **azuredeploy.json**
 
@@ -32,9 +31,8 @@ The ARM Template parameters file does not need to be changed as these values wil
 <br/>
 
 ---
-<br/>
 
-### Azure DevOps
+## Azure DevOps
 
 **Repo**
 
@@ -68,7 +66,6 @@ New that you have a DevOps Pipeline setup you’ll need to generate a PAT (Perso
 <br/>
 
 ---
-<br/>
 
 ## Power Apps
 
@@ -99,7 +96,6 @@ A new record is created using these fields each time the form is summited using 
 <br/>
 
 ---
-<br/>
 
 ## Microsoft Power Automate (or Azure Logic App)
 
