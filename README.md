@@ -14,6 +14,10 @@ This is a MVP demo to showcase a number of Microsoft cloud technologies working 
 </p>
 <br/>
 
+<p align="center">
+    <a href="./documentation/custom-overview-big.png"><img src="./documentation/custom-overview-small.png"></a>
+</p>
+
 ---
 
 ## ARM Teamplate
